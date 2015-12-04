@@ -1,7 +1,5 @@
 @extends('layouts.homepage')
 	
     @section('content')
-        <div>
-            <h1>Test Page</h1>
-        </div>
+        <main class="content-wrapper"></main>
     @endsection

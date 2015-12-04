@@ -6,7 +6,7 @@
 	Class PagesController extends Controller {
 		
 		public function home() {
-			$title = "Homepage";
+			$title = "TN Event Company";
 			return view('index',['title' => $title]);
 		}
 	}
