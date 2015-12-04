@@ -1,5 +1,5 @@
 <nav class="main-menu">
-	<ul class="clearfix">
+	<ul>
 		<li><a href="javascript:void(0)">главная</a></li>
 		<li><a href="javascript:void(0)">новости</a></li>
 		<li><a href="javascript:void(0)">об агенстве</a></li>
