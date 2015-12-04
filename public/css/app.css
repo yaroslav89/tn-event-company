@@ -7,15 +7,14 @@ html, body {
   margin: 0;
   padding: 0; }
 
-body a {
-  text-decoration: none; }
-
-body li {
-  list-style-type: none; }
+body {
+  background: linear-gradient(to right, #EC407A, #AB47BC); }
+  body a {
+    text-decoration: none; }
+  body li {
+    list-style-type: none; }
 
 header {
-  background: linear-gradient(to right, #EC407A, #AB47BC);
-  background-size: cover;
   margin: 0;
   position: relative; }
   header .header-content {
