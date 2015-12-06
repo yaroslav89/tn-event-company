@@ -1,7 +1,50 @@
-.clearfix:after {
-  content: '';
-  display: table;
-  clear: both; }
+/* font-family: "LatoRegular"; */
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/LatoRegular/LatoRegular.eot");
+  src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "LatoBold"; */
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/LatoBold/LatoBold.eot");
+  src: url("../fonts/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold/LatoBold.woff") format("woff"), url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "LatoItalic"; */
+@font-face {
+  font-family: "LatoItalic";
+  src: url("../fonts/LatoItalic/LatoItalic.eot");
+  src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoItalic/LatoItalic.woff") format("woff"), url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "LatoLight"; */
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/LatoLight/LatoLight.eot");
+  src: url("../fonts/LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLight/LatoLight.woff") format("woff"), url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "LatoBoldItalic"; */
+@font-face {
+  font-family: "LatoBoldItalic";
+  src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
+  src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"), url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "LatoLightItalic"; */
+@font-face {
+  font-family: "LatoLightItalic";
+  src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
+  src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"), url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -365,57 +408,72 @@ th {
 * {
   outline: none; }
 
-html, body {
-  margin: 0;
-  padding: 0; }
-
-body a {
-  text-decoration: none; }
-
-body li {
-  list-style-type: none; }
+body {
+  font-family: 'LatoBold', 'PT Sans', Arial;
+  height: 2500px; }
+  body a {
+    text-decoration: none; }
+  body li {
+    list-style-type: none; }
 
 header {
   margin: 0;
   padding: 0;
   width: 100%;
+  min-height: 650px;
   position: relative;
-  background: url(img/header.jpg) left top no-repeat;
+  background: url(img/head_bg.jpg) no-repeat;
   background-size: cover; }
-  header .header-content {
+  header .menu-wrapper {
+    position: fixed;
     width: 100%;
-    margin: 0 auto 30px auto;
-    padding: 20px 0 0 0; }
-    header .header-content .logo {
-      width: 357px;
-      height: 480px;
-      background: url(img/tn-logo.png);
-      margin: 0 auto;
-      opacity: 0.7; }
-    header .header-content .main-menu {
-      margin: 35px 0;
-      width: 100%;
-      text-align: center;
-      position: relative;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 30px 0; }
-      header .header-content .main-menu ul {
-        width: 900px;
-        display: inline-table;
-        vertical-align: middle; }
-        header .header-content .main-menu ul li {
+    height: 70px;
+    background-color: transparent;
+    transition: all .3s linear; }
+    header .menu-wrapper .global-nav {
+      display: table;
+      margin: auto; }
+      header .menu-wrapper .global-nav .logo {
+        background: url(img/logo.png) no-repeat;
+        background-size: 300px 404px;
+        width: 300px;
+        height: 404px;
+        float: left;
+        margin: 100px 30px 0 30px;
+        transition: all .3s linear; }
+      header .menu-wrapper .global-nav .logo-animated {
+        margin-top: 1px;
+        background-size: 50px 67px;
+        width: 50px;
+        height: 67px; }
+      header .menu-wrapper .global-nav ul {
+        float: left;
+        line-height: 40px; }
+        header .menu-wrapper .global-nav ul li {
           float: left;
-          margin-left: 5%; }
-          header .header-content .main-menu ul li a {
-            display: block;
-            color: white;
-            opacity: 0.8;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center; }
-            header .header-content .main-menu ul li a:hover {
-              opacity: 1; }
-        header .header-content .main-menu ul li:first-child {
-          margin-left: 0; }
+          margin: 10px;
+          padding: 2px; }
+          header .menu-wrapper .global-nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            text-transform: uppercase; }
+  header .menu-wrapper-animated {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.3); }
+    header .menu-wrapper-animated .global-nav ul li a {
+      color: #314a5b; }
+
+.content-wrapper .about {
+  width: 1280px;
+  margin: 30px auto;
+  padding: 15px;
+  display: table;
+  background: #FFFFFF;
+  box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.4); }
+  .content-wrapper .about p {
+    margin: 0;
+    color: #314a5b;
+    font-family: 'LatoRegular';
+    text-align: justify; }
 
 /*# sourceMappingURL=app.css.map */

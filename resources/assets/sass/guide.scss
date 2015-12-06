@@ -1,10 +1,6 @@
 // Colors
-
+$white: #FFFFFF;
+$black: #000000;
+$dark-brown: #6D4C41;
+$dark-blue: #314a5b;
 //Classes
-.clearfix {
-	&:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-}
