@@ -463,17 +463,17 @@ header {
     header .menu-wrapper-animated .global-nav ul li a {
       color: #314a5b; }
 
-.content-wrapper .about {
-  width: 1280px;
-  margin: 30px auto;
-  padding: 15px;
-  display: table;
-  background: #FFFFFF;
-  box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.4); }
-  .content-wrapper .about p {
-    margin: 0;
-    color: #314a5b;
-    font-family: 'LatoRegular';
-    text-align: justify; }
+.content-wrapper {
+  width: 100%; }
+  .content-wrapper .about {
+    width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+    display: table; }
+    .content-wrapper .about p {
+      margin: 0;
+      color: #314a5b;
+      font-family: 'LatoRegular';
+      text-align: justify; }
 
 /*# sourceMappingURL=app.css.map */

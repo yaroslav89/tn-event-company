@@ -1,5 +1,5 @@
 var app = {
-	
+
     scroll: function(val) {
         var flag = false;
         var scroll;
@@ -24,6 +24,7 @@ var app = {
             }
         });
     },
+    
     scrollTo: function() {}
 };
 

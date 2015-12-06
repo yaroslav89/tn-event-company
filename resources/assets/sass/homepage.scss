@@ -1,11 +1,10 @@
 .content-wrapper {
+	width: 100%;
     .about {
-    	width:1280px;
+    	width:80%;
     	margin: 30px auto;
     	padding:15px;
     	display: table;
-    	background: $white;
-    	box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.4);
         p {
         	margin: 0;
         	color: $dark-blue;
