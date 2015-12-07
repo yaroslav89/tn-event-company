@@ -2,7 +2,7 @@
 	<div class="menu-wrapper">
 		<nav class="global-nav">
 			<ul>
-				<li><a class="block-link" href="">Про нас</a></li>
+				<li><a class="block-link" href="about">Про нас</a></li>
 				<li><a class="block-link" href="">Услуги</a></li>
 				<li><a class="block-link" href="">Фото</a></li>	
 			</ul>

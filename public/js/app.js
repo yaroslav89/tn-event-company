@@ -5,7 +5,7 @@ var app = {
         var scroll;
 
         $(window).scroll(function() {
-            scroll = $(window).scrollTop();
+            var scroll = $(window).scrollTop();
 
             if (scroll > val) {
                 if (!flag) {
@@ -24,8 +24,35 @@ var app = {
             }
         });
     },
-    
-    scrollTo: function() {},
+
+    scrollToBlock: function() {
+        var element = $('.block-link');
+            element.click(function(e){
+                e.preventDefault();
+                var link = $('.' + $(this).attr('href'));
+                $('html,body').animate({
+                    scrollTop: link.offset().top - $('.menu-wrapper').height()
+                },600);
+            });
+    },
+
+    startAnimate: function() {
+        $(window).one('load', function() {
+            $('.logo').stop().delay(300).animate({
+                opacity: 0.8
+            }, 1000, function() {
+                var delay = 0;
+                $('.global-nav ul li').each(function() {
+                    $(this).stop().delay(delay).animate({
+                        marginTop: 0
+                    }, 300);
+                    delay += 100;
+                });
+            });
+        });
+    }
 };
 
+app.scrollToBlock();
+app.startAnimate();
 app.menuScroll(100);
