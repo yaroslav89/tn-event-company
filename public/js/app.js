@@ -1,6 +1,6 @@
 var app = {
 
-    scroll: function(val) {
+    menuScroll: function(val) {
         var flag = false;
         var scroll;
 
@@ -25,7 +25,7 @@ var app = {
         });
     },
     
-    scrollTo: function() {}
+    scrollTo: function() {},
 };
 
-app.scroll(100);
+app.menuScroll(100);

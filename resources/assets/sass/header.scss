@@ -5,7 +5,7 @@ header {
     min-height: 650px;
     position: relative;
     background: url(img/head_bg.jpg) no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     .menu-wrapper {
         position: fixed;
         width: 100%;
@@ -25,16 +25,19 @@ header {
                 height: 404px;
                 float: left;
                 margin: 100px 30px 0 30px;
+                opacity: 0.9;
                 -webkit-transition: all .3s linear;
                 -moz-transition: all .3s linear;
                 -o-transition: all .3s linear;
                 transition: all .3s linear;
             }
             .logo-animated {
+                background: url(img/logo-black.png) no-repeat;
                 margin-top: 1px;
                 background-size: 50px 67px;
                 width: 50px;
                 height: 67px;
+                opacity: 1;
             }
             ul {
                 float: left;
