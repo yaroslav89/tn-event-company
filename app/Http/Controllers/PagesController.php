@@ -14,7 +14,7 @@
 			$about = DB::select('select * from about');
 			// $events = DB::select();
 
-			return view('index',['title' => $title, 'about' => $about]);
+			return view('index',['title' => $title, 'about' => $about, 'services' => $services]);
 		}
 	}
  ?>

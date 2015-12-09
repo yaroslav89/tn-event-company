@@ -1,43 +1,50 @@
 var app = {
 
-    menuScroll: function(val) {
-        var flag = false;
+    init: function() {
+        this.menuScroll();
+        this.startAnimate();
+        this.scrollToBlock();
+        this.popUp();
+    },
+
+    menuScroll: function() {
         var scroll;
+        var val = 100;
 
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
-
             if (scroll > val) {
-                if (!flag) {
-                    $('.logo').addClass('logo-animated');
+                $('.logo').addClass('logo-animated');
 
-                    $('.menu-wrapper').addClass('menu-wrapper-animated');
-                    flag = true;
-                }
+                $('.menu-wrapper').addClass('menu-wrapper-animated');
+
             } else {
-                if (flag) {
-                    $('.logo').removeClass('logo-animated');
 
-                    $('.menu-wrapper').removeClass('menu-wrapper-animated');
-                    flag = false;
-                }
+                $('.logo').removeClass('logo-animated');
+
+                $('.menu-wrapper').removeClass('menu-wrapper-animated');
+
+
             }
         });
     },
 
     scrollToBlock: function() {
         var element = $('.block-link');
-            element.click(function(e){
-                e.preventDefault();
-                var link = $('.' + $(this).attr('href'));
-                $('html,body').animate({
-                    scrollTop: link.offset().top - $('.menu-wrapper').height()
-                },600);
-            });
+
+        element.click(function(e) {
+            e.preventDefault();
+            var link = $('.' + $(this).attr('href'));
+            $('html,body').animate({
+                scrollTop: link.offset().top - 20
+            }, 600);
+        });
     },
 
     startAnimate: function() {
         $(window).one('load', function() {
+            $('body').fadeIn();
+
             $('.logo').stop().delay(300).animate({
                 opacity: 0.8
             }, 1000, function() {
@@ -50,9 +57,16 @@ var app = {
                 });
             });
         });
+    },
+
+    popUp: function() {
+        var item = $('.service-content');
+
+            item.click(function(){
+                var data = $(this).find('.data').val();
+                console.log(data);
+            });
     }
 };
 
-app.scrollToBlock();
-app.startAnimate();
-app.menuScroll(100);
+app.init();
