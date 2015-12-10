@@ -15,16 +15,10 @@ var app = {
             var scroll = $(window).scrollTop();
             if (scroll > val) {
                 $('.logo').addClass('logo-animated');
-
                 $('.menu-wrapper').addClass('menu-wrapper-animated');
-
             } else {
-
                 $('.logo').removeClass('logo-animated');
-
                 $('.menu-wrapper').removeClass('menu-wrapper-animated');
-
-
             }
         });
     },
@@ -43,8 +37,6 @@ var app = {
 
     startAnimate: function() {
         $(window).one('load', function() {
-            $('body').fadeIn();
-
             $('.logo').stop().delay(300).animate({
                 opacity: 0.8
             }, 1000, function() {
@@ -62,10 +54,31 @@ var app = {
     popUp: function() {
         var item = $('.service-content');
 
-            item.click(function(){
-                var data = $(this).find('.data').val();
-                console.log(data);
+        item.click(function() {
+            var data = $(this).find('.data').val();
+            var positionTop = $(window).scrollTop();
+           
+            $('.popup').css({
+                top: positionTop + 200 + 'px'
             });
+
+            $('.popup').find('.data-content').text(data);
+            show();
+        });
+
+        $('.hover, .popup').click(hide);
+
+        function show() {
+            $('.hover, .popup').fadeIn();
+            $('#main').addClass('blur');
+            $('body').css({overflow:'hidden'});
+        }
+
+        function hide() {
+            $('.hover, .popup').fadeOut();
+            $('#main').removeClass('blur');
+            $('body').css({overflow:'auto'});
+        }
     }
 };
 
