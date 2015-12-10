@@ -27,5 +27,22 @@
                     <h1>Error No data found...</h1>
                 @endif
             </section>
+
+            <section class="portfolio">
+                @if ( isset($events) && !empty($events))
+                    <h2 class="title">{{ $events[0]->event_title }}</h2>
+                    <div class="event-description">
+                        <p>{{$events[0]->event_description}}</p>
+                    </div>
+
+                    @if (isset($gallery) && !empty($gallery))
+                        <div class="event-gallery">
+                            @foreach ($gallery as $value)
+                                <img src="{{ asset($value->imgUrl) }}" alt="{{ $events[0]->event_title }}">
+                            @endforeach
+                        </div>
+                    @endif
+                @endif
+            </section>
         </main>
     @endsection
