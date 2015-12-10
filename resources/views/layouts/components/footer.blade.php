@@ -1,9 +1,9 @@
 	<footer>
 		<img class='footer-logo' src="css/img/logo.png">
 		<div class="social">
-			<img class='social-image' src="css/img/insta.png">
-			<img class='social-image' src="css/img/fb.png">
-			<img class='social-image' src="css/img/vk.png">
+			<a href="https://www.instagram.com/nadia_toporivskaia/" target="_blank"><img class='social-image' src="css/img/insta.png"></a>
+			<a href="https://www.facebook.com/nadia.toporivskaia" target="_blank"><img class='social-image' src="css/img/fb.png"></a>
+			<a href="https://vk.com/id22310554" target="_blank"><img class='social-image' src="css/img/vk.png"></a>
 		</div>
 		<div class="footer-darker">© 2015 Event Company TN. All rights reserved</div>
 	</footer>
