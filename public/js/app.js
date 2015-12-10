@@ -1,13 +1,23 @@
 var app = {
 
     init: function() {
-        this.menuScroll();
-        this.startAnimate();
+
+        this.animate();
         this.scrollToBlock();
         this.popUp();
     },
 
-    menuScroll: function() {
+    animate: function() {
+        var scrollAnimation = this.scrollAnimation;
+        var headerAnimation = this.headerAnimation;
+
+        $(window).one('load', function() {
+            headerAnimation();
+            scrollAnimation();
+        });
+    },
+
+    scrollAnimation: function() {
         var scroll;
         var val = 100;
 
@@ -35,18 +45,16 @@ var app = {
         });
     },
 
-    startAnimate: function() {
-        $(window).one('load', function() {
-            $('.logo').stop().delay(300).animate({
-                opacity: 0.8
-            }, 1000, function() {
-                var delay = 0;
-                $('.global-nav ul li').each(function() {
-                    $(this).stop().delay(delay).animate({
-                        marginTop: 0
-                    }, 300);
-                    delay += 100;
-                });
+    headerAnimation: function() {
+        $('.logo').stop().delay(300).animate({
+            opacity: 0.8
+        }, 1000, function() {
+            var delay = 0;
+            $('.global-nav ul li').each(function() {
+                $(this).stop().delay(delay).animate({
+                    marginTop: 0
+                }, 300);
+                delay += 100;
             });
         });
     },
@@ -57,7 +65,7 @@ var app = {
         item.click(function() {
             var data = $(this).find('.data').val();
             var positionTop = $(window).scrollTop();
-           
+
             $('.popup').css({
                 top: positionTop + 200 + 'px'
             });
@@ -71,13 +79,17 @@ var app = {
         function show() {
             $('.hover, .popup').fadeIn();
             $('#main').addClass('blur');
-            $('body').css({overflow:'hidden'});
+            $('body').css({
+                overflow: 'hidden'
+            });
         }
 
         function hide() {
             $('.hover, .popup').fadeOut();
             $('#main').removeClass('blur');
-            $('body').css({overflow:'auto'});
+            $('body').css({
+                overflow: 'auto'
+            });
         }
     }
 };
