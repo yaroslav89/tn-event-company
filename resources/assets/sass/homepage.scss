@@ -5,15 +5,15 @@
     .title {
         font-size: 28px;
         margin-left: 4%;
+        font-family: 'LatoBoldItalic';
         text-transform: uppercase;
         border-bottom: 1px solid $light-gray;
         padding-bottom: 20px;
     }
     .about {
         width: 60%;
-        margin: 40px auto;
+        margin: 40px auto 0 auto;
         padding: 15px;
-        position: relative;
         border-radius: 10px;
         -moz-border-radius: 10px;
         box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
@@ -32,7 +32,6 @@
         margin: 40px auto 40px auto;
         display: table;
         padding: 15px;
-        position: relative;
         .service-content {
             width: 20%;
             height: 20%;

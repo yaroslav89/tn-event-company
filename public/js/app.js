@@ -23,6 +23,7 @@ var app = {
 
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
+            
             if (scroll > val) {
                 $('.logo').addClass('logo-animated');
                 $('.menu-wrapper').addClass('menu-wrapper-animated');
