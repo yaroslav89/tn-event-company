@@ -38,7 +38,9 @@
                     @if (isset($gallery) && !empty($gallery))
                         <div class="event-gallery">
                             @foreach ($gallery as $value)
-                                <img src="{{ asset($value->imgUrl) }}" alt="{{ $events[0]->event_title }}">
+                                <div class="img-container">
+                                    <img src="{{ asset($value->imgUrl) }}" alt="{{ $events[0]->event_title }}">
+                                </div>
                             @endforeach
                         </div>
                     @endif
