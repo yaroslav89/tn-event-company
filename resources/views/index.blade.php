@@ -6,10 +6,10 @@
             @if( isset($about) && !empty($about))
 				@foreach ($about as $value)
 					<h2 class="title">{{ $value->title }}</h2>
-    				<p>{{ $value->content }}</p>
+    				<p><?php echo $value->content ?></p>
 				@endforeach
             @else 
-                <h1>Error No data found...</h1>
+                <h1>Error...</h1>
             @endif
         	</section>
 
@@ -24,14 +24,15 @@
                         </div>
                     @endforeach
                 @else
-                    <h1>Error No data found...</h1>
+                    <h1>Error...</h1>
                 @endif
             </section>
 
             <section class="portfolio">
                 @if ( isset($events) && !empty($events))
-                    <h2 class="title">{{ $events[0]->event_title }}</h2>
+                    <h2 class="title">Последнее организованное нами мероприятие</h2>
                     <div class="event-description">
+                        <h3 class="event-title">{{ $events[0]->event_title }}</h3>
                         <p>{{$events[0]->event_description}}</p>
                     </div>
 
@@ -44,6 +45,8 @@
                             @endforeach
                         </div>
                     @endif
+                @else 
+                    <h1>Error..</h1>
                 @endif
             </section>
         </main>
