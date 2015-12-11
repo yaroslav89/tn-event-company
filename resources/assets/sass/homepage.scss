@@ -4,26 +4,24 @@
     padding: 0;
     .title {
         font-size: 28px;
-        margin-left: 4%;
-        font-family: 'LatoBoldItalic';
+        text-align: center;
+        text-indent: -6%;
+        font-family: 'LatoRegular';
         text-transform: uppercase;
         border-bottom: 1px solid $light-gray;
         padding-bottom: 20px;
     }
     .about {
-        width: 60%;
+        width: 80%;
         margin: 40px auto 0 auto;
         padding: 15px;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
         display: table;
         p {
             margin: 0 4%;
             color: $dark-blue;
-            font-family: 'LatoRegular';
+            font-family: 'LatoLight';
             text-align: justify;
-            line-height: 30px;
+
             font-size: 18px;
         }
     }
@@ -91,6 +89,17 @@
         }
     }
     .portfolio {
-        
+        width: 80%;
+        margin: 40px auto 40px auto;
+        display: table;
+        padding: 15px;
+        .event-description {
+            font-family: 'LatoLight';
+            text-align: justify; 
+        }
+        .event-gallery img {
+            width: 24%;
+            margin: .3%;
+        }
     }
 }

@@ -19,7 +19,7 @@ var app = {
 
     scrollAnimation: function() {
         var scroll;
-        var val = 100;
+        var val = 150;
 
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
