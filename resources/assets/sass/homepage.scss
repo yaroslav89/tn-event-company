@@ -21,8 +21,7 @@
             color: $dark-blue;
             font-family: 'LatoLight';
             text-align: justify;
-
-            font-size: 18px;
+            font-size: 1.3vw;
         }
     }
     .services {
@@ -96,6 +95,10 @@
         .event-description {
             font-family: 'LatoLight';
             text-align: justify; 
+            p {
+                font-size: 1.3vw;
+                 color: $dark-blue;
+            }
         }
         .event-gallery img {
             width: 24%;
