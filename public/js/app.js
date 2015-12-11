@@ -23,26 +23,43 @@ var app = {
 
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
-            
+            var btnpos = scroll + $('header').height() - $('.scroll-top').height();
+
+            if (btnpos > $('footer').offset().top) {
+                btnpos = scroll + $('header').height() - $('.scroll-top').height() - $('footer').height();
+            }
+
             if (scroll > val) {
                 $('.logo').addClass('logo-animated');
                 $('.menu-wrapper').addClass('menu-wrapper-animated');
+                $('.scroll-top').fadeIn(500);
+                $('.scroll-top').css({
+                    top: btnpos
+                });
             } else {
                 $('.logo').removeClass('logo-animated');
                 $('.menu-wrapper').removeClass('menu-wrapper-animated');
+                $('.scroll-top').fadeOut();
             }
         });
     },
 
     scrollToBlock: function() {
         var element = $('.block-link');
+        var scrollbtn = $('.scroll-top');
+
+        scrollbtn.click(function(){
+            $('html,body').animate({
+                scrollTop: 0
+            },1000, 'easeInOutSine');
+        });
 
         element.click(function(e) {
             e.preventDefault();
             var link = $('.' + $(this).attr('href'));
-            $('html,body').animate({
-                scrollTop: link.offset().top - 20
-            }, 600);
+            $('html,body').stop().animate({
+                scrollTop: link.offset().top - 30
+            }, 1500, 'easeInOutSine');
         });
     },
 
@@ -62,24 +79,27 @@ var app = {
 
     popUp: function() {
         var item = $('.service-content');
-
+        
         item.click(function() {
             var data = $(this).find('.data').val();
             var positionTop = $(window).scrollTop();
-
-            $('.popup').css({
-                top: positionTop + 200 + 'px'
-            });
 
             $('.popup').find('.data-content').text(data);
             show();
         });
 
-        $('.hover, .popup').click(hide);
+        $('.hover, .popup').click(function(){
+            $('.popup').find('.data-content').text('');
+            hide();
+        });
 
         function show() {
             $('.hover, .popup').fadeIn();
             $('#main').addClass('blur');
+
+            $('.popup').css({
+                top: $(window).scrollTop() + 200 + 'px'
+            });
             $('body').css({
                 overflow: 'hidden'
             });

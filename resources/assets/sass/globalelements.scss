@@ -10,3 +10,17 @@ body {
 	}
 }
 
+.scroll-top {
+	display: none;
+	position: absolute;
+	right: 2%;
+	width: 64px;
+	height: 64px;
+	background: url(img/top.png) no-repeat;
+	opacity: 0.3;
+	border: none;
+	outline: none;
+	&:hover {
+		opacity: 1;
+	}
+}

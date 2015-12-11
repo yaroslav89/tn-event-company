@@ -8,6 +8,7 @@
 				</div>
 		</div>
 	<div id="main">
+	<button class="scroll-top"></button>
 	@include('layouts.components.header')
 		@yield('content')
 	@include('layouts.components.footer')
