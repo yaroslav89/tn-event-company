@@ -4,7 +4,7 @@
 			<ul>
 				<li><a class="block-link" href="about">Про нас</a></li>
 				<li><a class="block-link" href="services">Услуги</a></li>
-				<li><a class="block-link" href="">Фото</a></li>	
+				<li><a class="block-link" href="portfolio">Фото</a></li>	
 			</ul>
 			<div class="logo"></div>
 			<ul>
