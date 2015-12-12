@@ -25,8 +25,9 @@ var app = {
             var scroll = $(window).scrollTop();
             var btnpos = scroll + $('header').height() - $('.scroll-top').height();
 
-            if (btnpos > $('footer').offset().top) {
-                btnpos = scroll + $('header').height() - $('.scroll-top').height() - $('footer').height();
+            if (btnpos >= $('footer').offset().top - $('.scroll-top').height()) {
+
+                btnpos = $('footer').offset().top - $('.scroll-top').outerHeight() - 10;
             }
 
             if (scroll > val) {
@@ -48,10 +49,10 @@ var app = {
         var element = $('.block-link');
         var scrollbtn = $('.scroll-top');
 
-        scrollbtn.click(function(){
+        scrollbtn.click(function() {
             $('html,body').animate({
                 scrollTop: 0
-            },1000, 'easeInOutSine');
+            }, 1000, 'easeInOutSine');
         });
 
         element.click(function(e) {
@@ -78,39 +79,49 @@ var app = {
     },
 
     popUp: function() {
-        var item = $('.service-content');
-        
-        item.click(function() {
+        var services = $('.service-content');
+        var img_container = $('.img-container');
+        var popup_container = $('.popup');
+        var popup_content = $('.popup-content');
+
+        services.click(function() {
             var data = $(this).find('.data').val();
-            var positionTop = $(window).scrollTop();
-
-            $('.popup').find('.data-content').text(data);
-            show();
+            popup_container.addClass('text-popup');
+            popup_content.append('<p class="data-content">' + data + '</p>');
+            show_popup();
         });
 
-        $('.hover, .popup').click(function(){
-            $('.popup').find('.data-content').text('');
-            hide();
+        img_container.click(function() {
+            var img_url = $(this).find('img').attr('src');
+            popup_container.addClass('img-popup');
+            popup_content.append('<img src=' + img_url + '>');
+            show_popup();
         });
 
-        function show() {
+        $('.hover, .popup').click(function() {
+            hide_popup();
+        });
+
+        function show_popup(is_img) {
             $('.hover, .popup').fadeIn();
             $('#main').addClass('blur');
 
             $('.popup').css({
-                top: $(window).scrollTop() + 200 + 'px'
+                top: $(window).scrollTop() + 50 + 'px'
             });
             $('body').css({
                 overflow: 'hidden'
             });
         }
 
-        function hide() {
-            $('.hover, .popup').fadeOut();
+        function hide_popup() {
+            $('.hover, .popup').hide();
             $('#main').removeClass('blur');
             $('body').css({
                 overflow: 'auto'
             });
+            popup_content.empty();
+            popup_container.removeClass('img-popup text-popup');
         }
     }
 };
