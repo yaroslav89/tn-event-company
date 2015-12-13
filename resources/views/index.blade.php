@@ -49,5 +49,9 @@
                     <h1>Error..</h1>
                 @endif
             </section>
+
+            <section class="partners">
+                
+            </section>
         </main>
     @endsection

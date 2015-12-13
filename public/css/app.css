@@ -671,7 +671,8 @@ footer {
   height: 230px;
   background: url(img/footer.jpg);
   background-position: top center;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   footer .footer-logo {
     width: 78px;
     height: 104px;
@@ -691,6 +692,10 @@ footer {
     line-height: 50px;
     opacity: .5;
     height: 50px;
-    background: rgba(0, 0, 0, 0.2); }
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
 
 /*# sourceMappingURL=app.css.map */
