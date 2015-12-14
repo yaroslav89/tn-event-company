@@ -55,7 +55,7 @@
             }
         }
         .service-title {
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.2);
             position: absolute;
             top: 0;
             right: 0;
@@ -67,7 +67,6 @@
             -webkit-border-radius: 50%;
             z-index: 1;
             transition: all .5s ease-out;
-            box-shadow: 0 0 10px 0 rgba(0,0,0,0.8);
             p {
                 display: block;
                 color: $white;
