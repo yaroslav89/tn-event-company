@@ -663,6 +663,19 @@ header {
         height: 100%;
         display: block;
         cursor: pointer; }
+  .content-wrapper .partners {
+    width: 80%;
+    margin: 40px auto 40px auto;
+    display: table;
+    padding: 15px; }
+    .content-wrapper .partners .partners-item {
+      text-align: center; }
+      .content-wrapper .partners .partners-item .partners-logo {
+        background-blend-mode: color-dodge;
+        display: inline-block;
+        margin: 0 5px 0 5px;
+        height: auto;
+        vertical-align: middle; }
 
 footer {
   bottom: 0;

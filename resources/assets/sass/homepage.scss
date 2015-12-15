@@ -115,4 +115,20 @@
             }
         }
     }
+    .partners {
+        width: 80%;
+        margin: 40px auto 40px auto;
+        display: table;
+        padding: 15px;
+        .partners-item {
+            text-align: center;
+            .partners-logo{
+                background-blend-mode: color-dodge;
+                display: inline-block;
+                margin: 0 5px 0 5px;
+                height: auto;
+                vertical-align: middle;
+            }
+        }
+    }
 }

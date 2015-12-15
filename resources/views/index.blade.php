@@ -51,7 +51,15 @@
             </section>
 
             <section class="partners">
-                
+                <h2 class="title">Партнеры</h2>
+                <div class="partners-item">
+                    <img class="partners-logo" src="content/partners/nt.png" alt="">
+                    <img class="partners-logo" src="content/partners/akademia.png" alt="">
+                    <img class="partners-logo" src="content/partners/vintag.png" alt="">
+                    <img class="partners-logo" src="content/partners/fregat.png" alt="">
+                    <img class="partners-logo" src="content/partners/kaljan.png" alt="">
+                    <img class="partners-logo" src="content/partners/showtime.png" alt="">
+                </div>
             </section>
         </main>
     @endsection
