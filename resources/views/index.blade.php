@@ -4,10 +4,8 @@
         <main class="content-wrapper">
         	<section class="about">
             @if( isset($about) && !empty($about))
-				@foreach ($about as $value)
-					<h2 class="title">{{ $value->title }}</h2>
-    				<p><?php echo $value->content ?></p>
-				@endforeach
+				<h2 class="title">{{ $about[0]->title }}</h2>
+    			<p><?php echo $about[0]->content ?></p>
             @else 
                 <h1>Error...</h1>
             @endif
