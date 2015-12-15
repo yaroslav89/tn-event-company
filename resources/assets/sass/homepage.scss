@@ -113,6 +113,9 @@
                 border-radius: 5px;
                 -moz-border-radius: 5px;
                 -webkit-border-radius: 5px;
+                &:hover {
+                    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+                }
             }
         }
     }
