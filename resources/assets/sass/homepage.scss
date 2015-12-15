@@ -9,7 +9,8 @@
         font-family: 'LatoRegular';
         text-transform: uppercase;
         border-bottom: 1px solid $light-gray;
-        padding-bottom: 20px;
+        border-top: 1px solid $light-gray;
+        padding: 10px 0 10px 0;
     }
     .event-title {
         font-size: 1.45vw;
@@ -126,12 +127,107 @@
         padding: 15px;
         .partners-item {
             text-align: center;
-            .partners-logo{
-                background-blend-mode: color-dodge;
-                display: inline-block;
+            .partners-logo-nt {
+                background: url(../content/partners/nt_bw.png);
+                width: 199px;
+                height: 135px;
                 margin: 0 5px 0 5px;
-                height: auto;
                 vertical-align: middle;
+                display: inline-block;
+                opacity: .5;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;
+                &:hover {
+                    background: url(../content/partners/nt.png);
+                    opacity: 1;
+                }
+            }
+            .partners-logo-akademia {
+                background: url(../content/partners/akademia_bw.png);
+                width: 136px;
+                height: 160px;
+                margin: 0 5px 0 5px;
+                vertical-align: middle;
+                display: inline-block;
+                opacity: .5;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;
+                &:hover {
+                    background: url(../content/partners/akademia.png);
+                    opacity: 1;
+                }
+            }
+            .partners-logo-vintag {
+                background: url(../content/partners/vintag_bw.png);
+                width: 138px;
+                height: 112px;
+                margin: 0 5px 0 5px;
+                vertical-align: middle;
+                display: inline-block;
+                opacity: .5;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;
+                &:hover {
+                    background: url(../content/partners/vintag.png);
+                    opacity: 1;
+                }
+            }
+            .partners-logo-fregat {
+                background: url(../content/partners/fregat_bw.png);
+                width: 134px;
+                height: 112px;
+                margin: 0 5px 0 5px;
+                vertical-align: middle;
+                display: inline-block;
+                opacity: .5;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;
+                &:hover {
+                    background: url(../content/partners/fregat.png);
+                    opacity: 1;
+                }
+            }
+            .partners-logo-kaljan {
+                background: url(../content/partners/kaljan_bw.png);
+                width: 135px;
+                height: 135px;
+                margin: 0 5px 0 5px;
+                vertical-align: middle;
+                display: inline-block;
+                opacity: .5;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;
+                &:hover {
+                    background: url(../content/partners/kaljan.png);
+                    opacity: 1;
+                }
+            }
+            .partners-logo-showtime {
+                background: url(../content/partners/showtime_bw.png);
+                width: 234px;
+                height: 100px;
+                margin: 0 5px 0 5px;
+                vertical-align: middle;
+                display: inline-block;
+                opacity: .5;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;
+                &:hover {
+                    background: url(../content/partners/showtime.png);
+                    opacity: 1;
+                }
             }
         }
     }

@@ -42,15 +42,16 @@ header {
             }
             ul {
                 float: left;
-                line-height: 60px;
+                line-height: 67px;
                 li {
                     float: left;
                     margin: -45px 5px 10px 5px;
                     padding: 2px;
                     a {
                         color: $white;
+                        font-family: 'LatoRegular';
                         opacity: 0.7;
-                        font-size: 20px;
+                        font-size: 1.4vw;
                         text-decoration: none;
                         text-transform: uppercase;
                         &:hover {
