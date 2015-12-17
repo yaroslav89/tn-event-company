@@ -43,15 +43,14 @@
             cursor: pointer;
             &:hover {
                 .service-title {
-                    background: rgba(0, 0, 0, 0.2);
                     p {
-                        opacity: 1;
+                        opacity: 0;
                     }
                 }
                 .service-img {
-                    filter: blur(1.5px);
-            -moz-filter: blur(1.5px);
-            -webkit-filter: blur(1.5px);
+                    filter: blur(0px);
+                    -moz-filter: blur(0px);
+                    -webkit-filter: blur(0px);
                 }
             }
         }
@@ -71,10 +70,14 @@
                 display: block;
                 color: $white;
                 font-family: "LatoRegular"; 
-                margin: 45% 0 0 0;
+                margin: 45% auto 0 auto;
+                width: 90%;
                 font-size: 1.3vw;
                 text-transform: uppercase;
-                opacity: 0;
+                font-weight: bold;
+                font-family: 'LatoBoldItalic';
+                opacity: 1;
+                text-shadow: 3px 3px 20px $black;
             }
         }
         .service-img {
@@ -85,6 +88,9 @@
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
             transition: all .5s ease-out;
+            filter: blur(2px);
+            -moz-filter: blur(2px);
+            -webkit-filter: blur(2px);
         }
     }
     .portfolio {
