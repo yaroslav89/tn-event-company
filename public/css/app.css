@@ -702,13 +702,17 @@ header {
     padding: 15px; }
     .content-wrapper .partners .partners-item {
       text-align: center; }
-      .content-wrapper .partners .partners-item .filter {
-        margin: 0 5px 0 5px;
+      .content-wrapper .partners .partners-item .align {
+        margin: 0 5px 5px 5px;
         vertical-align: middle;
         display: inline-block; }
       .content-wrapper .partners .partners-item .partners-logo-nt {
         background: url(../content/partners/nt.png);
         width: 199px;
+        height: 135px; }
+      .content-wrapper .partners .partners-item .partners-logo-clubnika {
+        background: url(../content/partners/clubnika.png);
+        width: 135px;
         height: 135px; }
       .content-wrapper .partners .partners-item .partners-logo-akademia {
         background: url(../content/partners/akademia.png);

@@ -159,14 +159,19 @@
         padding: 15px;
         .partners-item {
             text-align: center;
-            .filter {
-                margin: 0 5px 0 5px;
+            .align {
+                margin: 0 5px 5px 5px;
                 vertical-align: middle;
                 display: inline-block;
             }
             .partners-logo-nt {
                 background: url(../content/partners/nt.png);
                 width: 199px;
+                height: 135px;
+            }
+            .partners-logo-clubnika {
+                background: url(../content/partners/clubnika.png);
+                width: 135px;
                 height: 135px;
             }
             .partners-logo-akademia {

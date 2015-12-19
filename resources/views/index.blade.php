@@ -62,12 +62,13 @@
             <section class="partners">
                 <h2 class="title">Партнеры</h2>
                 <div class="partners-item">
-                    <div class="partners-logo-nt filter"></div>
-                    <div class="partners-logo-akademia filter"></div>
-                    <div class="partners-logo-vintag filter"></div>
-                    <div class="partners-logo-fregat filter"></div>
-                    <div class="partners-logo-kaljan filter"></div>
-                    <div class="partners-logo-showtime filter"></div>
+                    <a href="https://vk.com/club30856875" target="_blank" class="partners-logo-nt align"></a>
+                    <a href="https://www.instagram.com/clubnika_cv/" target="_blank" class="partners-logo-clubnika align"></a>
+                    <div class="partners-logo-akademia align"></div>
+                    <div class="partners-logo-vintag align"></div>
+                    <div class="partners-logo-fregat align"></div>
+                    <div class="partners-logo-kaljan align"></div>
+                    <div class="partners-logo-showtime align"></div>
                 </div>
             </section>
         </main>
