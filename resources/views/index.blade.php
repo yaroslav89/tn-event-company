@@ -48,6 +48,17 @@
                 @endif
             </section>
 
+            <section class="video">
+                <h2 class="title">Видео</h2>
+                @if (isset($video) && !empty($video))
+                    @foreach ($video as $value)
+                        <div class="video-container">
+                            <?php echo $value->iframe; ?>
+                        </div>
+                    @endforeach
+                @endif
+            </section>
+
             <section class="partners">
                 <h2 class="title">Партнеры</h2>
                 <div class="partners-item">

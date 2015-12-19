@@ -12,13 +12,15 @@
 			$services = DB::select('select * from services');
 			$about = DB::select('select * from about');
 			$gallery = DB::select('select imgUrl from gallery where event_id = ?', ['svt_vecher']);
+			$video = DB::select('select iframe from video');
 
 			return view('index',[
 					'title' => $title, 
 					'about' => $about, 
 					'services' => $services, 
 					'gallery' => $gallery ,
-					'events' => $events
+					'events' => $events,
+					'video' => $video
 				]);
 		}
 	}
