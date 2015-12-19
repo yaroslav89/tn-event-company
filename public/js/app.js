@@ -1,7 +1,6 @@
 var app = {
 
     init: function() {
-
         this.animate();
         this.scrollToBlock();
         this.popUp();
@@ -14,12 +13,16 @@ var app = {
         $(window).one('load', function() {
             headerAnimation();
             scrollAnimation();
+
+            if ($(window).scrollTop() > 150) {
+                $('.logo').addClass('logo-animated');
+                $('.menu-wrapper').addClass('menu-wrapper-animated');
+            }
         });
     },
 
     scrollAnimation: function() {
         var scroll;
-        var val = 150;
 
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
@@ -30,7 +33,7 @@ var app = {
                 btnpos = $('footer').offset().top - $('.scroll-top').outerHeight() - 10;
             }
 
-            if (scroll > val) {
+            if (scroll > 150) {
                 $('.logo').addClass('logo-animated');
                 $('.menu-wrapper').addClass('menu-wrapper-animated');
                 $('.scroll-top').fadeIn(500);
