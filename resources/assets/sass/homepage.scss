@@ -6,7 +6,6 @@
         font-size: 2vw;
         text-align: center;
         text-indent: -6%;
-        height: 72px;
         font-family: 'LatoRegular';
         text-transform: uppercase;
         border-bottom: 1px solid $light-gray;
@@ -15,6 +14,7 @@
     .event-title {
         font-size: 1.45vw;
         font-family: 'LatoBoldItalic';
+        text-align: center;
     }
     .about {
         width: 80%;
@@ -23,10 +23,11 @@
         display: table;
         p {
             margin: 0 4%;
-            color: $dark-blue;
+            color: $black;
             font-family: 'LatoLight';
             text-align: justify;
             font-size: 1.3vw;
+            text-indent: 3%;
         }
     }
     .services {
@@ -103,7 +104,8 @@
             text-align: justify; 
             p {
                 font-size: 1.3vw;
-                 color: $dark-blue;
+                color: $black;
+                text-indent: 3%;
             }
         }
         .event-gallery .img-container {
@@ -134,91 +136,41 @@
         .partners-item {
             text-align: center;
             .filter {
-                -webkit-filter: grayscale(100%);
-                -moz-filter: grayscale(100%);
-                -o-filter: grayscale(100%);
-                filter: grayscale(100%);
                 margin: 0 5px 0 5px;
                 vertical-align: middle;
                 display: inline-block;
-                opacity: .7;
-                -webkit-transition: all .3s linear;
-                -moz-transition: all .3s linear;
-                -o-transition: all .3s linear;
-                transition: all .3s linear;
             }
             .partners-logo-nt {
                 background: url(../content/partners/nt.png);
                 width: 199px;
                 height: 135px;
-                &:hover {
-                    -webkit-filter: none; 
-                    -moz-filter: none; 
-                    -o-filter: none;
-                    filter: none; 
-                    opacity: 1;
-                }
+
             }
             .partners-logo-akademia {
                 background: url(../content/partners/akademia.png);
                 width: 136px;
                 height: 160px;
-                &:hover {
-                    -webkit-filter: none; 
-                    -moz-filter: none; 
-                    -o-filter: none;
-                    filter: none; 
-                    opacity: 1;
-                }
             }
             .partners-logo-vintag {
                 background: url(../content/partners/vintag.png);
                 width: 138px;
                 height: 112px;
-                &:hover {
-                    -webkit-filter: none; 
-                    -moz-filter: none; 
-                    -o-filter: none;
-                    filter: none; 
-                    opacity: 1;
-                }
             }
             .partners-logo-fregat {
                 background: url(../content/partners/fregat.png);
                 width: 134px;
                 height: 112px;
-                &:hover {
-                    -webkit-filter: none; 
-                    -moz-filter: none; 
-                    -o-filter: none;
-                    filter: none; 
-                    opacity: 1;
-                }
             }
             .partners-logo-kaljan {
                 background: url(../content/partners/kaljan.png);
                 width: 135px;
                 height: 135px;
                 margin: 0 5px 0 5px;
-                &:hover {
-                    -webkit-filter: none; 
-                    -moz-filter: none; 
-                    -o-filter: none;
-                    filter: none; 
-                    opacity: 1;
-                }
             }
             .partners-logo-showtime {
                 background: url(../content/partners/showtime.png);
                 width: 234px;
                 height: 100px;
-                &:hover {
-                    -webkit-filter: none; 
-                    -moz-filter: none; 
-                    -o-filter: none;
-                    filter: none; 
-                    opacity: 1;
-                }
             }
         }
     }

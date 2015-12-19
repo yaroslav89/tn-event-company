@@ -577,11 +577,11 @@ header {
     font-family: 'LatoRegular';
     text-transform: uppercase;
     border-bottom: 1px solid #b8b8b8;
-    border-top: 1px solid #b8b8b8;
     padding: 10px 0 10px 0; }
   .content-wrapper .event-title {
     font-size: 1.45vw;
-    font-family: 'LatoBoldItalic'; }
+    font-family: 'LatoBoldItalic';
+    text-align: center; }
   .content-wrapper .about {
     width: 80%;
     margin: 40px auto 0 auto;
@@ -589,10 +589,11 @@ header {
     display: table; }
     .content-wrapper .about p {
       margin: 0 4%;
-      color: #314a5b;
+      color: #000000;
       font-family: 'LatoLight';
       text-align: justify;
-      font-size: 1.3vw; }
+      font-size: 1.3vw;
+      text-indent: 3%; }
   .content-wrapper .services {
     width: 80%;
     margin: 40px auto 40px auto;
@@ -605,14 +606,12 @@ header {
       position: relative;
       margin: 3% 2% 0 3%;
       cursor: pointer; }
-      .content-wrapper .services .service-content:hover .service-title {
-        background: rgba(0, 0, 0, 0.2); }
-        .content-wrapper .services .service-content:hover .service-title p {
-          opacity: 1; }
+      .content-wrapper .services .service-content:hover .service-title p {
+        opacity: 0; }
       .content-wrapper .services .service-content:hover .service-img {
-        filter: blur(1.5px);
-        -moz-filter: blur(1.5px);
-        -webkit-filter: blur(1.5px); }
+        filter: blur(0px);
+        -moz-filter: blur(0px);
+        -webkit-filter: blur(0px); }
     .content-wrapper .services .service-title {
       position: absolute;
       top: 0;
@@ -629,10 +628,14 @@ header {
         display: block;
         color: #FFFFFF;
         font-family: "LatoRegular";
-        margin: 45% 0 0 0;
+        margin: 45% auto 0 auto;
+        width: 90%;
         font-size: 1.3vw;
         text-transform: uppercase;
-        opacity: 0; }
+        font-weight: bold;
+        font-family: 'LatoBoldItalic';
+        opacity: 1;
+        text-shadow: 3px 3px 20px #000000; }
     .content-wrapper .services .service-img {
       display: block;
       width: 100%;
@@ -640,7 +643,10 @@ header {
       border-radius: 50%;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
-      transition: all .5s ease-out; }
+      transition: all .5s ease-out;
+      filter: blur(2px);
+      -moz-filter: blur(2px);
+      -webkit-filter: blur(2px); }
   .content-wrapper .portfolio {
     width: 80%;
     margin: 40px auto 40px auto;
@@ -651,7 +657,8 @@ header {
       text-align: justify; }
       .content-wrapper .portfolio .event-description p {
         font-size: 1.3vw;
-        color: #314a5b; }
+        color: #000000;
+        text-indent: 3%; }
     .content-wrapper .portfolio .event-gallery .img-container {
       width: 23%;
       margin: 1%;
@@ -676,76 +683,34 @@ header {
     .content-wrapper .partners .partners-item {
       text-align: center; }
       .content-wrapper .partners .partners-item .filter {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
         margin: 0 5px 0 5px;
         vertical-align: middle;
-        display: inline-block;
-        opacity: .7;
-        transition: all .3s linear; }
+        display: inline-block; }
       .content-wrapper .partners .partners-item .partners-logo-nt {
         background: url(../content/partners/nt.png);
         width: 199px;
         height: 135px; }
-        .content-wrapper .partners .partners-item .partners-logo-nt:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-akademia {
         background: url(../content/partners/akademia.png);
         width: 136px;
         height: 160px; }
-        .content-wrapper .partners .partners-item .partners-logo-akademia:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-vintag {
         background: url(../content/partners/vintag.png);
         width: 138px;
         height: 112px; }
-        .content-wrapper .partners .partners-item .partners-logo-vintag:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-fregat {
         background: url(../content/partners/fregat.png);
         width: 134px;
         height: 112px; }
-        .content-wrapper .partners .partners-item .partners-logo-fregat:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-kaljan {
         background: url(../content/partners/kaljan.png);
         width: 135px;
         height: 135px;
         margin: 0 5px 0 5px; }
-        .content-wrapper .partners .partners-item .partners-logo-kaljan:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-showtime {
         background: url(../content/partners/showtime.png);
         width: 234px;
         height: 100px; }
-        .content-wrapper .partners .partners-item .partners-logo-showtime:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
 
 footer {
   bottom: 0;
@@ -756,11 +721,33 @@ footer {
   background-position: top center;
   text-align: center;
   position: relative; }
+  footer .contacts-adres {
+    width: 32%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin: 5% 0 0 7%;
+    text-align: right;
+    color: #FFFFFF;
+    opacity: .5;
+    font-family: 'LatoRegular'; }
+  footer .contacts-logo {
+    width: 32%;
+    display: inline-block; }
   footer .footer-logo {
     width: 78px;
     height: 104px;
     opacity: .5;
     padding: 20px 0 10px 0; }
+  footer .contacts-telephone {
+    width: 32%;
+    display: inline-block;
+    position: absolute;
+    margin: 5% 0 0 -5%;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: .5;
+    font-family: 'LatoRegular'; }
   footer .social-image {
     width: 30px;
     height: 30px;

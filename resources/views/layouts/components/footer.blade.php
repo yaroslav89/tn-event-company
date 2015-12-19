@@ -1,5 +1,13 @@
-	<footer class="contacts">
-		<img class='footer-logo' src="css/img/logo.png">
+	<footer>
+		<div class="contacts-adres">
+			<p>г. Черновцы, ул. Главная, 59 (4-й этаж)</p>
+		</div>
+		<div class="contacts-logo">
+			<img class="footer-logo" src="css/img/logo.png">
+		</div>
+		<div class="contacts-telephone">
+			<p>тел. +380 50 623 3604</p>
+		</div>
 		<div class="social">
 			<a href="https://www.instagram.com/nadia_toporivskaia/" target="_blank"><img class='social-image' src="css/img/insta.png"></a>
 			<a href="https://www.facebook.com/nadia.toporivskaia" target="_blank"><img class='social-image' src="css/img/fb.png"></a>

@@ -59,7 +59,7 @@ var app = {
             e.preventDefault();
             var link = $('.' + $(this).attr('href'));
             $('html,body').stop().animate({
-                scrollTop: link.offset().top - 30
+                scrollTop: link.offset().top - 50
             }, 1500, 'easeInOutSine');
         });
     },
