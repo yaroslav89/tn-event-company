@@ -574,14 +574,14 @@ header {
     font-size: 2vw;
     text-align: center;
     text-indent: -6%;
+    height: 72px;
     font-family: 'LatoRegular';
     text-transform: uppercase;
     border-bottom: 1px solid #b8b8b8;
     padding: 10px 0 10px 0; }
   .content-wrapper .event-title {
     font-size: 1.45vw;
-    font-family: 'LatoBoldItalic';
-    text-align: center; }
+    font-family: 'LatoBoldItalic'; }
   .content-wrapper .about {
     width: 80%;
     margin: 40px auto 0 auto;
@@ -589,11 +589,10 @@ header {
     display: table; }
     .content-wrapper .about p {
       margin: 0 4%;
-      color: #000000;
+      color: #314a5b;
       font-family: 'LatoLight';
       text-align: justify;
-      font-size: 1.3vw;
-      text-indent: 3%; }
+      font-size: 1.3vw; }
   .content-wrapper .services {
     width: 80%;
     margin: 40px auto 40px auto;
@@ -657,8 +656,7 @@ header {
       text-align: justify; }
       .content-wrapper .portfolio .event-description p {
         font-size: 1.3vw;
-        color: #000000;
-        text-indent: 3%; }
+        color: #314a5b; }
     .content-wrapper .portfolio .event-gallery .img-container {
       width: 23%;
       margin: 1%;
@@ -675,6 +673,26 @@ header {
         -webkit-border-radius: 5px; }
         .content-wrapper .portfolio .event-gallery .img-container img:hover {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); }
+  .content-wrapper .video {
+    width: 80%;
+    margin: 40px auto 40px auto;
+    display: table;
+    padding: 15px; }
+    .content-wrapper .video .video-container {
+      position: relative;
+      height: 0;
+      padding: 25px 0 50% 0;
+      border: 5px solid #FFFFFF;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px; }
+      .content-wrapper .video .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
   .content-wrapper .partners {
     width: 80%;
     margin: 40px auto 40px auto;
@@ -683,34 +701,76 @@ header {
     .content-wrapper .partners .partners-item {
       text-align: center; }
       .content-wrapper .partners .partners-item .filter {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
         margin: 0 5px 0 5px;
         vertical-align: middle;
-        display: inline-block; }
+        display: inline-block;
+        opacity: .7;
+        transition: all .3s linear; }
       .content-wrapper .partners .partners-item .partners-logo-nt {
         background: url(../content/partners/nt.png);
         width: 199px;
         height: 135px; }
+        .content-wrapper .partners .partners-item .partners-logo-nt:hover {
+          -webkit-filter: none;
+          -moz-filter: none;
+          -o-filter: none;
+          filter: none;
+          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-akademia {
         background: url(../content/partners/akademia.png);
         width: 136px;
         height: 160px; }
+        .content-wrapper .partners .partners-item .partners-logo-akademia:hover {
+          -webkit-filter: none;
+          -moz-filter: none;
+          -o-filter: none;
+          filter: none;
+          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-vintag {
         background: url(../content/partners/vintag.png);
         width: 138px;
         height: 112px; }
+        .content-wrapper .partners .partners-item .partners-logo-vintag:hover {
+          -webkit-filter: none;
+          -moz-filter: none;
+          -o-filter: none;
+          filter: none;
+          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-fregat {
         background: url(../content/partners/fregat.png);
         width: 134px;
         height: 112px; }
+        .content-wrapper .partners .partners-item .partners-logo-fregat:hover {
+          -webkit-filter: none;
+          -moz-filter: none;
+          -o-filter: none;
+          filter: none;
+          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-kaljan {
         background: url(../content/partners/kaljan.png);
         width: 135px;
         height: 135px;
         margin: 0 5px 0 5px; }
+        .content-wrapper .partners .partners-item .partners-logo-kaljan:hover {
+          -webkit-filter: none;
+          -moz-filter: none;
+          -o-filter: none;
+          filter: none;
+          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-showtime {
         background: url(../content/partners/showtime.png);
         width: 234px;
         height: 100px; }
+        .content-wrapper .partners .partners-item .partners-logo-showtime:hover {
+          -webkit-filter: none;
+          -moz-filter: none;
+          -o-filter: none;
+          filter: none;
+          opacity: 1; }
 
 footer {
   bottom: 0;
