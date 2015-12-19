@@ -573,15 +573,15 @@ header {
   .content-wrapper .title {
     font-size: 2vw;
     text-align: center;
-    text-indent: -6%;
-    height: 72px;
+    text-indent: -5%;
     font-family: 'LatoRegular';
     text-transform: uppercase;
     border-bottom: 1px solid #b8b8b8;
     padding: 10px 0 10px 0; }
   .content-wrapper .event-title {
     font-size: 1.45vw;
-    font-family: 'LatoBoldItalic'; }
+    font-family: 'LatoBoldItalic';
+    text-align: center; }
   .content-wrapper .about {
     width: 80%;
     margin: 40px auto 0 auto;
@@ -589,10 +589,11 @@ header {
     display: table; }
     .content-wrapper .about p {
       margin: 0 4%;
-      color: #314a5b;
+      color: #000000;
       font-family: 'LatoLight';
       text-align: justify;
-      font-size: 1.3vw; }
+      font-size: 1.3vw;
+      text-indent: 3%; }
   .content-wrapper .services {
     width: 80%;
     margin: 40px auto 40px auto;
@@ -656,7 +657,8 @@ header {
       text-align: justify; }
       .content-wrapper .portfolio .event-description p {
         font-size: 1.3vw;
-        color: #314a5b; }
+        color: #000000;
+        text-indent: 3%; }
     .content-wrapper .portfolio .event-gallery .img-container {
       width: 23%;
       margin: 1%;
@@ -701,76 +703,34 @@ header {
     .content-wrapper .partners .partners-item {
       text-align: center; }
       .content-wrapper .partners .partners-item .filter {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
         margin: 0 5px 0 5px;
         vertical-align: middle;
-        display: inline-block;
-        opacity: .7;
-        transition: all .3s linear; }
+        display: inline-block; }
       .content-wrapper .partners .partners-item .partners-logo-nt {
         background: url(../content/partners/nt.png);
         width: 199px;
         height: 135px; }
-        .content-wrapper .partners .partners-item .partners-logo-nt:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-akademia {
         background: url(../content/partners/akademia.png);
         width: 136px;
         height: 160px; }
-        .content-wrapper .partners .partners-item .partners-logo-akademia:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-vintag {
         background: url(../content/partners/vintag.png);
         width: 138px;
         height: 112px; }
-        .content-wrapper .partners .partners-item .partners-logo-vintag:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-fregat {
         background: url(../content/partners/fregat.png);
         width: 134px;
         height: 112px; }
-        .content-wrapper .partners .partners-item .partners-logo-fregat:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-kaljan {
         background: url(../content/partners/kaljan.png);
         width: 135px;
         height: 135px;
         margin: 0 5px 0 5px; }
-        .content-wrapper .partners .partners-item .partners-logo-kaljan:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-showtime {
         background: url(../content/partners/showtime.png);
         width: 234px;
         height: 100px; }
-        .content-wrapper .partners .partners-item .partners-logo-showtime:hover {
-          -webkit-filter: none;
-          -moz-filter: none;
-          -o-filter: none;
-          filter: none;
-          opacity: 1; }
 
 footer {
   bottom: 0;
