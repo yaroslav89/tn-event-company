@@ -51,12 +51,12 @@
             <section class="partners">
                 <h2 class="title">Партнеры</h2>
                 <div class="partners-item">
-                    <div class="partners-logo-nt"></div>
-                    <div class="partners-logo-akademia"></div>
-                    <div class="partners-logo-vintag"></div>
-                    <div class="partners-logo-fregat"></div>
-                    <div class="partners-logo-kaljan"></div>
-                    <div class="partners-logo-showtime"></div>
+                    <div class="partners-logo-nt filter"></div>
+                    <div class="partners-logo-akademia filter"></div>
+                    <div class="partners-logo-vintag filter"></div>
+                    <div class="partners-logo-fregat filter"></div>
+                    <div class="partners-logo-kaljan filter"></div>
+                    <div class="partners-logo-showtime filter"></div>
                 </div>
             </section>
         </main>

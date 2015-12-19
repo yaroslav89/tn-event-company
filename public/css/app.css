@@ -675,19 +675,20 @@ header {
     padding: 15px; }
     .content-wrapper .partners .partners-item {
       text-align: center; }
-      .content-wrapper .partners .partners-item .partners-logo-nt {
-        background: url(../content/partners/nt.png);
+      .content-wrapper .partners .partners-item .filter {
         -webkit-filter: grayscale(100%);
         -moz-filter: grayscale(100%);
         -o-filter: grayscale(100%);
         filter: grayscale(100%);
-        width: 199px;
-        height: 135px;
         margin: 0 5px 0 5px;
         vertical-align: middle;
         display: inline-block;
         opacity: .7;
         transition: all .3s linear; }
+      .content-wrapper .partners .partners-item .partners-logo-nt {
+        background: url(../content/partners/nt.png);
+        width: 199px;
+        height: 135px; }
         .content-wrapper .partners .partners-item .partners-logo-nt:hover {
           -webkit-filter: none;
           -moz-filter: none;
@@ -696,17 +697,8 @@ header {
           opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-akademia {
         background: url(../content/partners/akademia.png);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
         width: 136px;
-        height: 160px;
-        margin: 0 5px 0 5px;
-        vertical-align: middle;
-        display: inline-block;
-        opacity: .7;
-        transition: all .3s linear; }
+        height: 160px; }
         .content-wrapper .partners .partners-item .partners-logo-akademia:hover {
           -webkit-filter: none;
           -moz-filter: none;
@@ -715,17 +707,8 @@ header {
           opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-vintag {
         background: url(../content/partners/vintag.png);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
         width: 138px;
-        height: 112px;
-        margin: 0 5px 0 5px;
-        vertical-align: middle;
-        display: inline-block;
-        opacity: .7;
-        transition: all .3s linear; }
+        height: 112px; }
         .content-wrapper .partners .partners-item .partners-logo-vintag:hover {
           -webkit-filter: none;
           -moz-filter: none;
@@ -734,17 +717,8 @@ header {
           opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-fregat {
         background: url(../content/partners/fregat.png);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
         width: 134px;
-        height: 112px;
-        margin: 0 5px 0 5px;
-        vertical-align: middle;
-        display: inline-block;
-        opacity: .7;
-        transition: all .3s linear; }
+        height: 112px; }
         .content-wrapper .partners .partners-item .partners-logo-fregat:hover {
           -webkit-filter: none;
           -moz-filter: none;
@@ -753,17 +727,9 @@ header {
           opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-kaljan {
         background: url(../content/partners/kaljan.png);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
         width: 135px;
         height: 135px;
-        margin: 0 5px 0 5px;
-        vertical-align: middle;
-        display: inline-block;
-        opacity: .7;
-        transition: all .3s linear; }
+        margin: 0 5px 0 5px; }
         .content-wrapper .partners .partners-item .partners-logo-kaljan:hover {
           -webkit-filter: none;
           -moz-filter: none;
@@ -772,17 +738,8 @@ header {
           opacity: 1; }
       .content-wrapper .partners .partners-item .partners-logo-showtime {
         background: url(../content/partners/showtime.png);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
         width: 234px;
-        height: 100px;
-        margin: 0 5px 0 5px;
-        vertical-align: middle;
-        display: inline-block;
-        opacity: .7;
-        transition: all .3s linear; }
+        height: 100px; }
         .content-wrapper .partners .partners-item .partners-logo-showtime:hover {
           -webkit-filter: none;
           -moz-filter: none;
