@@ -8,7 +8,7 @@
 			</ul>
 			<div class="logo"></div>
 			<ul>
-				<li><a class="block-link" href="">Видео</a></li>
+				<li><a class="block-link" href="video">Видео</a></li>
 				<li><a class="block-link" href="partners">Партнеры</a></li>
 				<li><a class="block-link" href="contacts">Контакты</a></li>
 			</ul>
