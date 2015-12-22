@@ -16,22 +16,22 @@
 
 .text-popup {
     width: 50%;
-    height: 600px;
+    height: 70%;
     background: #fff;
     left: 50%;
     top: 50%;
     border-radius: 10px;
-    padding: 60px 0;
+    padding: 20px 0;
     margin-left: -25%;
+    opacity: 0.9;
     .popup-content {
         padding: 0 30px;
         overflow: auto;
         height: 100%;
         text-align: justify;
         .data-content {
-            line-height: 2vw;
             font-family: 'LatoLight';
-            font-size: 1.3vw;
+            font-size: 18px;
             font-weight: bold;
             color: $dark-blue;
         }

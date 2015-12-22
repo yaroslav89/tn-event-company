@@ -98,7 +98,7 @@ var app = {
             var img_url = $(this).find('img').attr('src');
             popup_container.addClass('img-popup');
             popup_content.append('<img src=' + img_url + '>');
-            show_popup();
+            show_popup(true);
         });
 
         $('.hover, .popup').click(function() {
@@ -106,12 +106,19 @@ var app = {
         });
 
         function show_popup(is_img) {
+            var extra = 100;
+
+            if (is_img) {
+                extra = 25;
+            }
+
             $('.hover, .popup').fadeIn();
             $('#main').addClass('blur');
 
             $('.popup').css({
-                top: $(window).scrollTop() + 50 + 'px'
+                top: $(window).scrollTop() + extra + 'px'
             });
+
             $('body').css({
                 overflow: 'hidden'
             });
@@ -120,9 +127,11 @@ var app = {
         function hide_popup() {
             $('.hover, .popup').hide();
             $('#main').removeClass('blur');
+
             $('body').css({
                 overflow: 'auto'
             });
+
             popup_content.empty();
             popup_container.removeClass('img-popup text-popup');
         }
