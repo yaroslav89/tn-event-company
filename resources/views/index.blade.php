@@ -1,5 +1,4 @@
 @extends('layouts.homepage')
-	
     @section('content')
         <main class="content-wrapper">
         	<section class="about">
@@ -27,22 +26,21 @@
             </section>
 
             <section class="portfolio">
-                @if ( isset($events) && !empty($events))
                     <h2 class="title">Последнее организованное нами мероприятие</h2>
+                     @if ( isset($events) && !empty($events))
+                     @foreach ($events as $event)
                     <div class="event-description">
-                        <h3 class="event-title">{{ $events[0]->event_title }}</h3>
-                        <p>{{$events[0]->event_description}}</p>
+                        <h3 class="event-title">{{ $event->event_title }}</h3>
+                        <p>{{$event->event_description}}</p>
                     </div>
-
-                    @if (isset($gallery) && !empty($gallery))
                         <div class="event-gallery">
-                            @foreach ($gallery as $value)
+                            @foreach ($event->gallery as $value)
                                 <div class="img-container">
-                                    <img src="{{ asset($value->imgUrl) }}" alt="{{ $events[0]->event_title }}">
+                                    <img src="{{ asset($value->imgUrl) }}" alt="{{ $event->event_title }}">
                                 </div>
                             @endforeach
                         </div>
-                    @endif
+                    @endforeach
                 @else 
                     <h1>Error..</h1>
                 @endif
